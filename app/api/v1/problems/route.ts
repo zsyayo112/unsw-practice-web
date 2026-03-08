@@ -21,7 +21,7 @@ export async function GET(request: NextRequest) {
       .order('order_index', { ascending: true })
 
     if (difficulty) {
-      query = query.eq('difficulty', difficulty)
+      query = query.eq('difficulty', difficulty as 'easy' | 'medium' | 'hard')
     }
 
     if (course) {

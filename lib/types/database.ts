@@ -26,6 +26,7 @@ export interface Database {
           is_active?: boolean
           created_at?: string
         }
+        Relationships: []
       }
       problems: {
         Row: {
@@ -79,6 +80,7 @@ export interface Database {
           created_at?: string
           updated_at?: string
         }
+        Relationships: []
       }
       test_cases: {
         Row: {
@@ -105,6 +107,7 @@ export interface Database {
           is_hidden?: boolean
           order_index?: number
         }
+        Relationships: []
       }
       user_progress: {
         Row: {
@@ -131,6 +134,7 @@ export interface Database {
           solve_count?: number
           last_submitted_at?: string | null
         }
+        Relationships: []
       }
     }
     Views: Record<string, never>
